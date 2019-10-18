@@ -1,6 +1,6 @@
 #!/bin/bash
 
-state=`xinput list-props "13" | grep "Device Enabled" | tail -c 2`
+state=`xinput list-props "$1" | grep "Device Enabled" | tail -c 2`
 
 
 if test $state = '1'
